@@ -1,0 +1,5 @@
+{
+  "version": 1,
+  "note": "Uygulamadaki kelimelere eklenecek yeni veya düzeltilmiş kelimeler. Biçim: src/types.ts > Concept.",
+  "concepts": []
+}

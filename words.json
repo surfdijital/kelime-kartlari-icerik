@@ -1,5 +1,576 @@
 {
-  "version": 1,
-  "note": "Uygulamadaki kelimelere eklenecek yeni veya düzeltilmiş kelimeler. Biçim: src/types.ts > Concept.",
-  "concepts": []
+ "version": 1,
+ "note": "Uygulamadaki kelimelere eklenecek yeni veya düzeltilmiş kelimeler. Biçim: src/types.ts > Concept.",
+ "concepts": [
+  {
+   "id": "notebook",
+   "level": "A1",
+   "theme": "school",
+   "en": "notebook",
+   "tr": "defter",
+   "emoji": "📓",
+   "ex": "I write new words in my notebook.",
+   "rel": [
+    {
+     "en": "page",
+     "tr": "sayfa"
+    },
+    {
+     "en": "paper",
+     "tr": "kağıt"
+    }
+   ]
+  },
+  {
+   "id": "cook",
+   "level": "A1",
+   "theme": "jobs",
+   "en": "cook",
+   "tr": "aşçı / yemek pişirmek",
+   "emoji": "🧑‍🍳",
+   "ex": "My uncle is a cook in a big hotel.",
+   "rel": [
+    {
+     "en": "kitchen",
+     "tr": "mutfak"
+    },
+    {
+     "en": "food",
+     "tr": "yemek"
+    }
+   ]
+  },
+  {
+   "id": "baby",
+   "level": "A1",
+   "theme": "people",
+   "en": "baby",
+   "tr": "bebek",
+   "emoji": "👶",
+   "ex": "The baby is sleeping in her bed.",
+   "rel": [
+    {
+     "en": "mother",
+     "tr": "anne"
+    },
+    {
+     "en": "small",
+     "tr": "küçük"
+    }
+   ]
+  },
+  {
+   "id": "coat",
+   "level": "A1",
+   "theme": "clothes",
+   "en": "coat",
+   "tr": "palto / mont",
+   "emoji": "🧥",
+   "ex": "I wear a warm coat in winter.",
+   "rel": [
+    {
+     "en": "winter",
+     "tr": "kış"
+    },
+    {
+     "en": "cold",
+     "tr": "soğuk"
+    }
+   ]
+  },
+  {
+   "id": "funny",
+   "level": "A1",
+   "theme": "character",
+   "en": "funny",
+   "tr": "komik",
+   "emoji": "😂",
+   "ex": "My brother is very funny.",
+   "rel": [
+    {
+     "en": "laugh",
+     "tr": "gülmek"
+    },
+    {
+     "en": "joke",
+     "tr": "şaka"
+    }
+   ]
+  },
+  {
+   "id": "calendar",
+   "level": "A2",
+   "theme": "daily",
+   "en": "calendar",
+   "tr": "takvim",
+   "emoji": "📅",
+   "ex": "I write my plans on the calendar.",
+   "rel": [
+    {
+     "en": "date",
+     "tr": "tarih"
+    },
+    {
+     "en": "month",
+     "tr": "ay"
+    }
+   ]
+  },
+  {
+   "id": "leaf",
+   "level": "A2",
+   "theme": "nature",
+   "en": "leaf",
+   "tr": "yaprak",
+   "emoji": "🍃",
+   "ex": "A yellow leaf fell from the tree.",
+   "rel": [
+    {
+     "en": "tree",
+     "tr": "ağaç"
+    },
+    {
+     "en": "autumn",
+     "tr": "sonbahar"
+    }
+   ]
+  },
+  {
+   "id": "dictionary",
+   "level": "A2",
+   "theme": "school",
+   "en": "dictionary",
+   "tr": "sözlük",
+   "emoji": "📖",
+   "ex": "Look up the new word in your dictionary.",
+   "rel": [
+    {
+     "en": "word",
+     "tr": "kelime"
+    },
+    {
+     "en": "meaning",
+     "tr": "anlam"
+    }
+   ]
+  },
+  {
+   "id": "king",
+   "level": "A2",
+   "theme": "people",
+   "en": "king",
+   "tr": "kral",
+   "emoji": "👑",
+   "ex": "The king lives in a big castle.",
+   "rel": [
+    {
+     "en": "queen",
+     "tr": "kraliçe"
+    },
+    {
+     "en": "crown",
+     "tr": "taç"
+    }
+   ]
+  },
+  {
+   "id": "glad",
+   "level": "A2",
+   "theme": "feelings",
+   "en": "glad",
+   "tr": "memnun / sevinçli",
+   "emoji": "😊",
+   "ex": "I'm glad you came to my party.",
+   "rel": [
+    {
+     "en": "happy",
+     "tr": "mutlu"
+    },
+    {
+     "en": "smile",
+     "tr": "gülümseme"
+    }
+   ]
+  },
+  {
+   "id": "dessert",
+   "level": "B1",
+   "theme": "food",
+   "en": "dessert",
+   "tr": "tatlı (yemek sonu)",
+   "emoji": "🍮",
+   "ex": "We had chocolate cake for dessert.",
+   "rel": [
+    {
+     "en": "sugar",
+     "tr": "şeker"
+    },
+    {
+     "en": "cake",
+     "tr": "pasta"
+    }
+   ]
+  },
+  {
+   "id": "sunglasses",
+   "level": "B1",
+   "theme": "clothes",
+   "en": "sunglasses",
+   "tr": "güneş gözlüğü",
+   "emoji": "🕶️",
+   "ex": "Don't forget your sunglasses at the beach.",
+   "rel": [
+    {
+     "en": "sun",
+     "tr": "güneş"
+    },
+    {
+     "en": "summer",
+     "tr": "yaz"
+    }
+   ]
+  },
+  {
+   "id": "certificate",
+   "level": "B1",
+   "theme": "school",
+   "en": "certificate",
+   "tr": "sertifika / belge",
+   "emoji": "📜",
+   "ex": "She got a certificate at the end of the course.",
+   "rel": [
+    {
+     "en": "course",
+     "tr": "kurs"
+    },
+    {
+     "en": "diploma",
+     "tr": "diploma"
+    }
+   ]
+  },
+  {
+   "id": "memory",
+   "level": "B1",
+   "theme": "ideas",
+   "en": "memory",
+   "tr": "anı / hafıza",
+   "emoji": "🧠",
+   "ex": "I have a happy memory of that holiday.",
+   "rel": [
+    {
+     "en": "remember",
+     "tr": "hatırlamak"
+    },
+    {
+     "en": "past",
+     "tr": "geçmiş"
+    }
+   ]
+  },
+  {
+   "id": "traffic",
+   "level": "B1",
+   "theme": "city",
+   "en": "traffic",
+   "tr": "trafik",
+   "emoji": "🚦",
+   "ex": "There was a lot of traffic this morning.",
+   "rel": [
+    {
+     "en": "car",
+     "tr": "araba"
+    },
+    {
+     "en": "road",
+     "tr": "yol"
+    }
+   ]
+  },
+  {
+   "id": "thrilled",
+   "level": "B2",
+   "theme": "feelings",
+   "en": "thrilled",
+   "tr": "çok heyecanlı / çok mutlu",
+   "emoji": "🤩",
+   "ex": "We were thrilled to win the match.",
+   "rel": [
+    {
+     "en": "excited",
+     "tr": "heyecanlı"
+    },
+    {
+     "en": "delighted",
+     "tr": "çok memnun"
+    }
+   ]
+  },
+  {
+   "id": "tutor",
+   "level": "B2",
+   "theme": "school",
+   "en": "tutor",
+   "tr": "özel öğretmen",
+   "emoji": "🧑‍🏫",
+   "ex": "My tutor helps me with maths every Monday.",
+   "rel": [
+    {
+     "en": "lesson",
+     "tr": "ders"
+    },
+    {
+     "en": "student",
+     "tr": "öğrenci"
+    }
+   ]
+  },
+  {
+   "id": "volcano",
+   "level": "B2",
+   "theme": "nature",
+   "en": "volcano",
+   "tr": "yanardağ",
+   "emoji": "🌋",
+   "ex": "The volcano last erupted a hundred years ago.",
+   "rel": [
+    {
+     "en": "lava",
+     "tr": "lav"
+    },
+    {
+     "en": "mountain",
+     "tr": "dağ"
+    }
+   ]
+  },
+  {
+   "id": "wireless",
+   "level": "B2",
+   "theme": "tech",
+   "en": "wireless",
+   "tr": "kablosuz",
+   "emoji": "📶",
+   "ex": "Is there wireless internet in the library?",
+   "rel": [
+    {
+     "en": "internet",
+     "tr": "internet"
+    },
+    {
+     "en": "signal",
+     "tr": "sinyal"
+    }
+   ]
+  },
+  {
+   "id": "shade",
+   "level": "B2",
+   "theme": "colors",
+   "en": "shade",
+   "tr": "ton (renk tonu) / gölge",
+   "emoji": "🎨",
+   "ex": "I like this shade of green.",
+   "rel": [
+    {
+     "en": "colour",
+     "tr": "renk"
+    },
+    {
+     "en": "light",
+     "tr": "açık"
+    }
+   ]
+  },
+  {
+   "id": "bewildered",
+   "level": "C1",
+   "theme": "feelings",
+   "en": "bewildered",
+   "tr": "şaşkın / ne yapacağını bilemeyen",
+   "emoji": "😕",
+   "ex": "He looked bewildered by the strange map.",
+   "rel": [
+    {
+     "en": "confused",
+     "tr": "kafası karışık"
+    },
+    {
+     "en": "puzzled",
+     "tr": "şaşırmış"
+    }
+   ]
+  },
+  {
+   "id": "utensil",
+   "level": "C1",
+   "theme": "home",
+   "en": "utensil",
+   "tr": "mutfak aleti / kap kacak",
+   "emoji": "🍴",
+   "ex": "Keep the kitchen utensils in the top drawer.",
+   "rel": [
+    {
+     "en": "spoon",
+     "tr": "kaşık"
+    },
+    {
+     "en": "kitchen",
+     "tr": "mutfak"
+    }
+   ]
+  },
+  {
+   "id": "nutrient",
+   "level": "C1",
+   "theme": "food",
+   "en": "nutrient",
+   "tr": "besin maddesi",
+   "emoji": "🥦",
+   "ex": "Vegetables are full of important nutrients.",
+   "rel": [
+    {
+     "en": "vitamin",
+     "tr": "vitamin"
+    },
+    {
+     "en": "healthy",
+     "tr": "sağlıklı"
+    }
+   ]
+  },
+  {
+   "id": "hibernate",
+   "level": "C1",
+   "theme": "nature",
+   "en": "hibernate",
+   "tr": "kış uykusuna yatmak",
+   "emoji": "🐻",
+   "ex": "Bears hibernate during the cold winter months.",
+   "rel": [
+    {
+     "en": "winter",
+     "tr": "kış"
+    },
+    {
+     "en": "sleep",
+     "tr": "uyumak"
+    }
+   ]
+  },
+  {
+   "id": "spine",
+   "level": "C1",
+   "theme": "body",
+   "en": "spine",
+   "tr": "omurga",
+   "emoji": "🦴",
+   "ex": "Sit up straight to protect your spine.",
+   "rel": [
+    {
+     "en": "back",
+     "tr": "sırt"
+    },
+    {
+     "en": "bone",
+     "tr": "kemik"
+    }
+   ]
+  },
+  {
+   "id": "jubilant",
+   "level": "C2",
+   "theme": "feelings",
+   "en": "jubilant",
+   "tr": "sevinçten coşmuş",
+   "emoji": "🥳",
+   "ex": "The jubilant fans cheered all night.",
+   "rel": [
+    {
+     "en": "joyful",
+     "tr": "neşeli"
+    },
+    {
+     "en": "celebrate",
+     "tr": "kutlamak"
+    }
+   ]
+  },
+  {
+   "id": "azure",
+   "level": "C2",
+   "theme": "colors",
+   "en": "azure",
+   "tr": "gök mavisi",
+   "emoji": "🔵",
+   "ex": "The azure sea sparkled in the sun.",
+   "rel": [
+    {
+     "en": "blue",
+     "tr": "mavi"
+    },
+    {
+     "en": "sky",
+     "tr": "gökyüzü"
+    }
+   ]
+  },
+  {
+   "id": "lexicographer",
+   "level": "C2",
+   "theme": "jobs",
+   "en": "lexicographer",
+   "tr": "sözlükbilimci",
+   "emoji": "📖",
+   "ex": "A lexicographer writes and edits dictionaries.",
+   "rel": [
+    {
+     "en": "dictionary",
+     "tr": "sözlük"
+    },
+    {
+     "en": "word",
+     "tr": "kelime"
+    }
+   ]
+  },
+  {
+   "id": "delectable",
+   "level": "C2",
+   "theme": "food",
+   "en": "delectable",
+   "tr": "nefis / çok lezzetli",
+   "emoji": "😋",
+   "ex": "The chef made a delectable chocolate tart.",
+   "rel": [
+    {
+     "en": "tasty",
+     "tr": "lezzetli"
+    },
+    {
+     "en": "delicious",
+     "tr": "leziz"
+    }
+   ]
+  },
+  {
+   "id": "archipelago",
+   "level": "C2",
+   "theme": "nature",
+   "en": "archipelago",
+   "tr": "takımada",
+   "emoji": "🏝️",
+   "ex": "The archipelago has over a hundred small islands.",
+   "rel": [
+    {
+     "en": "island",
+     "tr": "ada"
+    },
+    {
+     "en": "sea",
+     "tr": "deniz"
+    }
+   ]
+  }
+ ]
 }
